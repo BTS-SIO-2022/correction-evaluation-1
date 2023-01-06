@@ -1,0 +1,25 @@
+/*C'est par ici que tout se passe dans l'espace */
+
+.carreau {
+    width: 50%;
+    height: 50%;
+}
+
+.bleu {
+    background-color: #005293 ;
+}
+
+.rouge {
+    background-color: #D21034 ;
+}
+
+.panama {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blanc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

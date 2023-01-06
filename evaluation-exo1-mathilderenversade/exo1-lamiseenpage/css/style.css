@@ -1,0 +1,43 @@
+/*C'est par ici que tout se passe dans l'espace */
+
+strong, em {
+    font-size : 17px;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 900;
+}
+
+section {
+    width : 70%;
+    margin: auto;
+}
+
+/* Solution pour répartir le contenu de manière équivalente dans le conteneur en utilisant les flexbox */
+
+#aToiDeJouer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Autre solution proposée par Fabrice qui fonctionne 
+#aToiDeJouer {
+    column-count: 2;
+}
+
+p {
+    display: inline-block;
+}*
+*/
+
+#aToiDeJouer p {
+    margin : 20px 0;
+}
+
+#aToiDeJouer div {
+    width: 500px;
+}

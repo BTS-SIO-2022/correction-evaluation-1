@@ -1,0 +1,66 @@
+/*C'est par ici que tout se passe dans l'espace */
+.loading {
+    display: flex;
+    justify-content: center;
+}
+
+.loading__circle {
+    width: 2em;
+    height: 2em;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin : 2em 0.375em;
+}
+
+.loading__circle:hover{
+    transform: scale(1.5);
+    transition-duration: 2s;
+}
+
+.loading__circle--color-blue:hover {
+    background-color: #4385F6;
+}
+
+.loading__circle--color-red:hover {
+    background-color: #EA4235;
+    transition-timing-function: cubic-bezier(.04,1.12,.9,-0.75);
+}
+
+.loading__circle--color-yellow:hover {
+    background-color: #FBBD06;
+}
+
+.loading__circle--color-green:hover {
+    background-color: #34A855;
+}
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  #move {
+      position: relative;
+      animation: slidetop 4s infinite;
+  }
+
+  @keyframes slidetop {
+    from {
+        top : 0px;
+    }
+    to {
+        top:200px;
+    }
+  }
